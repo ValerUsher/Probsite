@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красивая жизнь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="site-title">Красивая жизнь</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Поиск...">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="left-column">
+            <h2>Статьи</h2>
+            <div id="posts"></div>
+        </div>
+        <div class="right-column">
+            <h2>Добавить статью</h2>
+            <form id="addPostForm">
+                <input type="text" id="title" placeholder="Заголовок" required>
+                <textarea id="content" placeholder="Содержание" required></textarea>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Все права защищены</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
